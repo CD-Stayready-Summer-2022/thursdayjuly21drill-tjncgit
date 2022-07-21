@@ -16,6 +16,9 @@ public class Problem01 {
      * @return
      */
     public boolean lastDigit(int a, int b) {
-        return false;
+        String aString = String.valueOf(a);
+        String bString = String.valueOf(b);
+        return aString.charAt(aString.length() - 1 ) == bString.charAt(bString.length() - 1 );
+
     }
 }

@@ -16,6 +16,10 @@ public class Sample01 {
      * @return
      */
     public String everyNth(String str, int n) {
-        return null;
+        StringBuilder out = new StringBuilder();
+        for(int i = 0; i < str.length(); i+=n){
+            out.append(str.charAt(i));
+        }
+        return out.toString();
     }
 }
